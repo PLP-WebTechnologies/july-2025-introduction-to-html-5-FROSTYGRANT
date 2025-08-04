@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to ExampleSite, your go-to resource for web design and development tutorials." />
+  <meta name="keywords" content="HTML5, Web Development, Accessibility, SEO, Tutorials" />
+  <meta name="author" content="ExampleSite Team" />
+  <title>ExampleSite | Web Development & Accessibility Tutorials</title>
+  <link rel="canonical" href="https://www.examplesite.com/">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header, nav, main, footer {
+      padding: 1rem;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 1rem;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header role="banner">
+    <h1>ExampleSite</h1>
+    <p>Your go-to resource for accessible and SEO-friendly web development tutorials.</p>
+  </header>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="#about" accesskey="a">About</a></li>
+      <li><a href="#tutorials" accesskey="t">Tutorials</a></li>
+      <li><a href="#contact" accesskey="c">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main role="main">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Us</h2>
+      <p>At ExampleSite, we provide free, high-quality tutorials and tips for building modern, accessible websites using semantic HTML5, CSS, and JavaScript.</p>
+    </section>
+
+    <section id="tutorials" aria-labelledby="tutorials-heading">
+      <h2 id="tutorials-heading">Featured Tutorials</h2>
+
+      <article role="article" aria-labelledby="html5-tutorial">
+        <h3 id="html5-tutorial">Getting Started with HTML5</h3>
+        <p>Learn how to build semantic and well-structured web pages using HTML5 elements.</p>
+      </article>
+
+      <article role="article" aria-labelledby="accessibility-tutorial">
+        <h3 id="accessibility-tutorial">Web Accessibility Basics</h3>
+        <p>Understand the core principles of making your website usable for all users, including those with disabilities.</p>
+      </article>
+
+      <article role="article" aria-labelledby="seo-tutorial">
+        <h3 id="seo-tutorial">SEO Best Practices</h3>
+        <p>Boost your website's visibility with effective and ethical search engine optimization strategies.</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form aria-label="Contact form">
+        <label for="name">Name:</label><br/>
+        <input type="text" id="name" name="name" aria-required="true" required /><br/><br/>
+
+        <label for="email">Email:</label><br/>
+        <input type="email" id="email" name="email" aria-required="true" required /><br/><br/>
+
+        <label for="message">Message:</label><br/>
+        <textarea id="message" name="message" rows="5" aria-required="true" required></textarea><br/><br/>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 ExampleSite. All rights reserved.</p>
+    <p><a href="#top">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
